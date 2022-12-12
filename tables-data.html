@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Components / Accordion - NiceAdmin Bootstrap Template</title>
+  <title>Tables / General - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -270,12 +270,12 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-            <i class="bi bi-layout-text-window-reverse"></i><span>Vente</span><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-              <a href="tables-data.html">
-                <i class="bi bi-circle"></i><span>Derniere vente</span>
+        <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Vente</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content " data-bs-parent="#sidebar-nav">
+            <a href="tables-data.html">
+              <i class="bi bi-circle"></i><span>Derniere vente</span>
             </a>
           </li>
         </ul>
@@ -312,7 +312,7 @@
       </li><!-- End Error 404 Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " href="pages-blank.html">
+        <a class="nav-link collapsed" href="pages-blank.html">
           <i class="bi bi-file-earmark"></i>
           <span>Blank</span>
         </a>
@@ -325,51 +325,78 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Blank Page</h1>
+      <h1>General Tables</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Blank</li>
+          <li class="breadcrumb-item">Tables</li>
+          <li class="breadcrumb-item active">General</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section">
       <div class="row">
+        <div class="col-lg-6">
 
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/img/produit.jpg" class="card-img-top" alt="...">
+          <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Produit 1</h5>
-              <p class="card-text">Une rose Rouge</p>
-              <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit deserunt ad</small></p>
-              <p class="card-text">Prix : 19€</p>
-              <a href="#" class="btn btn-primary">Ajouter au panier</a>
-              <p class="card-text"><small class="text-muted">REF : FLEUR_1</small></p>
-              <p class="card-text"><small><a href="#">Fleurs / Rose / Rouge</a></small></p>
-            </div>
-          </div>
+              <h5 class="card-title">Derniere Vente</h5>
 
-
-
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/img/produit.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Produit 2</h5>
-              <p class="card-text">Une rose blanche</p>
-              <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit deserunt ad</small></p>
-              <p class="card-text">Prix : 17€</p>
-              <a href="#" class="btn btn-primary">Ajouter au panier</a>
-              <p class="card-text"><small class="text-muted">REF : FLEUR_2</small>
-              <p class="card-text"><small><a href="#">Fleurs / Rose / Blanche</a></small></p>
-
+              <!-- Default Table -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Start Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Brandon Jacob</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>2016-05-25</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Bridie Kessler</td>
+                    <td>Developer</td>
+                    <td>35</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ashleigh Langosh</td>
+                    <td>Finance</td>
+                    <td>45</td>
+                    <td>2011-08-12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Angus Grady</td>
+                    <td>HR</td>
+                    <td>34</td>
+                    <td>2012-06-11</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Raheem Lehner</td>
+                    <td>Dynamic Division Officer</td>
+                    <td>47</td>
+                    <td>2011-04-19</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Default Table Example -->
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
   </main><!-- End #main -->
 
